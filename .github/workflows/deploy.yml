@@ -39,7 +39,10 @@ jobs:
           VITE_EMAILJS_SERVICE_ID: ${{ secrets.VITE_EMAILJS_SERVICE_ID }}
           VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}
           VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
-        run: npm run build
+        run: |
+          echo "Building with EmailJS configuration..."
+          echo "Service ID: ${VITE_EMAILJS_SERVICE_ID:0:10}..."
+          npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
