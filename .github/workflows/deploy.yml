@@ -40,8 +40,23 @@ jobs:
           VITE_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}
           VITE_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}
         run: |
-          echo "Building with EmailJS configuration..."
-          echo "Service ID: ${VITE_EMAILJS_SERVICE_ID:0:10}..."
+          echo "Checking EmailJS configuration..."
+          if [ -z "$VITE_EMAILJS_SERVICE_ID" ]; then
+            echo "ERROR: VITE_EMAILJS_SERVICE_ID is not set!"
+          else
+            echo "VITE_EMAILJS_SERVICE_ID is set (first 5 chars: ${VITE_EMAILJS_SERVICE_ID:0:5})"
+          fi
+          if [ -z "$VITE_EMAILJS_TEMPLATE_ID" ]; then
+            echo "ERROR: VITE_EMAILJS_TEMPLATE_ID is not set!"
+          else
+            echo "VITE_EMAILJS_TEMPLATE_ID is set (first 5 chars: ${VITE_EMAILJS_TEMPLATE_ID:0:5})"
+          fi
+          if [ -z "$VITE_EMAILJS_PUBLIC_KEY" ]; then
+            echo "ERROR: VITE_EMAILJS_PUBLIC_KEY is not set!"
+          else
+            echo "VITE_EMAILJS_PUBLIC_KEY is set (first 5 chars: ${VITE_EMAILJS_PUBLIC_KEY:0:5})"
+          fi
+          echo "Building..."
           npm run build
 
       - name: Setup Pages
