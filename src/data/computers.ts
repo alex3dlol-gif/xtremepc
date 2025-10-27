@@ -11,6 +11,8 @@ export interface Computer {
   images?: string[];
 }
 
+const baseURL = import.meta.env.BASE_URL;
+
 export const computers: Computer[] = [
   {
     id: 1,
@@ -21,8 +23,8 @@ export const computers: Computer[] = [
     storage: "1TB NVMe SSD",
     price: 87000,
     category: "Игровой",
-    image: "/pics/1/114.970.png",
-    images: ["/pics/1/113.970.png", "/pics/1/114.970.png", "/pics/1/115.970.png"]
+    image: `${baseURL}pics/1/114.970.png`,
+    images: [`${baseURL}pics/1/113.970.png`, `${baseURL}pics/1/114.970.png`, `${baseURL}pics/1/115.970.png`]
   },
   {
     id: 2,
@@ -33,8 +35,8 @@ export const computers: Computer[] = [
     storage: "1TB NVMe SSD",
     price: 96000,
     category: "Игровой",
-    image: "/pics/2/18.970.png",
-    images: ["/pics/2/18.970.png", "/pics/2/19.970.png", "/pics/2/20.970.png"]
+    image: `${baseURL}pics/2/18.970.png`,
+    images: [`${baseURL}pics/2/18.970.png`, `${baseURL}pics/2/19.970.png`, `${baseURL}pics/2/20.970.png`]
   },
   {
     id: 3,
@@ -43,10 +45,8 @@ export const computers: Computer[] = [
     gpu: "NVIDIA RTX 5060 Ti 8GB",
     ram: "32GB DDR4 3200 MHz",
     storage: "1TB NVMe SSD",
-    price: 105000,
-    category: "Игровой",
-    image: "/pics/3/137.970.png",
-    images: ["/pics/3/137.970.png", "/pics/3/138.970.png", "/pics/3/139.970.png"]
+    price:也为 ${baseURL}pics/3/137.970.png`,
+    images: [`${baseURL}pics/3/137.970.png`, `${baseURL}pics/3/138.970.png`, `${baseURL}pics/3/139.970.png`]
   },
   {
     id: 4,
@@ -57,8 +57,8 @@ export const computers: Computer[] = [
     storage: "1TB NVMe SSD",
     price: 115000,
     category: "Игровой",
-    image: "/pics/4/53.970.png",
-    images: ["/pics/4/52.970.png", "/pics/4/53.970.png", "/pics/4/54.970.png"]
+    image: `${baseURL}pics/4/53.970.png`,
+    images: [`${baseURL}pics/4/52.970.png`, `${baseURL}pics/4/53.970.png`, `${baseURL}pics/4/54.970.png`]
   },
   {
     id: 5,
@@ -69,8 +69,8 @@ export const computers: Computer[] = [
     storage: "1TB NVMe SSD",
     price: 145000,
     category: "Игровой",
-    image: "/pics/5/10.970.png",
-    images: ["/pics/5/9.970.png", "/pics/5/10.970.png", "/pics/5/11.970.png"]
+    image: `${baseURL}pics/5/10.970.png`,
+    images: [`${baseURL}pics/5/9.970.png`, `${baseURL}pics/5/10.970.png`, `${baseURL}pics/5/11.970.png`]
   },
   {
     id: 6,
@@ -81,8 +81,8 @@ export const computers: Computer[] = [
     storage: "2TB NVMe SSD",
     price: 157000,
     category: "Игровой",
-    image: "/pics/6/109.970.png",
-    images: ["/pics/6/109.970.png", "/pics/6/111.970.png", "/pics/6/112.970.png"]
+    image: `${baseURL}pics/6/109.970.png`,
+    images: [`${baseURL}pics/6/109.970.png`, `${baseURL}pics/6/111.970.png`, `${baseURL}pics/6/112.970.png`]
   },
   {
     id: 7,
@@ -93,8 +93,8 @@ export const computers: Computer[] = [
     storage: "2TB NVMe SSD",
     price: 193000,
     category: "Игровой",
-    image: "/pics/7/71.970.png",
-    images: ["/pics/7/71.970.png", "/pics/7/72.970.png", "/pics/7/73.970.png"]
+    image: `${baseURL}pics/7/71.970.png`,
+    images: [`${baseURL}pics/7/71.970.png`, `${baseURL}pics/7/72.970.png`, `${baseURL}pics/7/73.970.png`]
   },
   {
     id: 8,
@@ -105,8 +105,8 @@ export const computers: Computer[] = [
     storage: "2TB NVMe SSD",
     price: 210000,
     category: "Игровой",
-    image: "/pics/8/128.970.png",
-    images: ["/pics/8/128.970.png", "/pics/8/130.970.png", "/pics/8/131.970.png"]
+    image: `${baseURL}pics/8/128.970.png`,
+    images: [`${baseURL}pics/8/128.970.png`, `${baseURL}pics/8/130.970.png`, `${baseURL}pics/8/131.970.png`]
   },
   {
     id: 9,
@@ -117,7 +117,7 @@ export const computers: Computer[] = [
     storage: "2TB NVMe SSD",
     price: 283000,
     category: "Игровой",
-    image: "/pics/9/81.970.png",
-    images: ["/pics/9/81.970.png", "/pics/9/82.970.png", "/pics/9/85.970.png"]
+    image: `${baseURL}pics/9/81.970.png`,
+    images: [`${baseURL}pics/9/81.970.png`, `${baseURL}pics/9/82.970.png`, `${baseURL}pics/9/85.970.png`]
   }
 ];

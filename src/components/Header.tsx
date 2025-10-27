@@ -27,7 +27,7 @@ export function Header({ onScrollToTop, isProductPage, onBackToHome, onOpenOrder
             className="hover:opacity-80 transition-opacity"
           >
             <img 
-              src="/logo.png" 
+              src={`${import.meta.env.BASE_URL}logo.png`} 
               alt="XtremePC" 
               className="h-10 w-auto"
             />

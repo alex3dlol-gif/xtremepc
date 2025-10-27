@@ -4,7 +4,7 @@ import path from 'path';
 
 export default defineConfig({
   // Base URL для GitHub Pages
-  base: '/',
+  base: '/xtremepc/',
   plugins: [react()],
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],

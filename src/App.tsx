@@ -91,7 +91,7 @@ export default function App() {
             <div className="md:col-span-2">
               <div className="mb-4">
                 <img 
-                  src="/logo.png" 
+                  src={`${import.meta.env.BASE_URL}logo.png`} 
                   alt="XtremePC" 
                   className="h-12 w-auto"
                 />
