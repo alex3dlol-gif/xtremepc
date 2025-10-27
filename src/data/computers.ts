@@ -45,7 +45,9 @@ export const computers: Computer[] = [
     gpu: "NVIDIA RTX 5060 Ti 8GB",
     ram: "32GB DDR4 3200 MHz",
     storage: "1TB NVMe SSD",
-    price:也为 ${baseURL}pics/3/137.970.png`,
+    price: 105000,
+    category: "Игровой",
+    image: `${baseURL}pics/3/137.970.png`,
     images: [`${baseURL}pics/3/137.970.png`, `${baseURL}pics/3/138.970.png`, `${baseURL}pics/3/139.970.png`]
   },
   {
