@@ -3,13 +3,14 @@ import { Card } from "./ui/card";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export function ReviewsSlider() {
+  const baseUrl = (import.meta as any).env?.BASE_URL || '';
   const reviews = [
-    "/rewie/Снимок экрана 2025-10-27 150007.png",
-    "/rewie/Снимок экрана 2025-10-27 145948.png",
-    "/rewie/Снимок экрана 2025-10-27 145927.png",
-    "/rewie/Снимок экрана 2025-10-27 145908.png",
-    "/rewie/Снимок экрана 2025-10-27 145847.png",
-    "/rewie/Снимок экрана 2025-10-27 145801.png"
+    `${baseUrl}rewie/Снимок экрана 2025-10-27 150007.png`,
+    `${baseUrl}rewie/Снимок экрана 2025-10-27 145948.png`,
+    `${baseUrl}rewie/Снимок экрана 2025-10-27 145927.png`,
+    `${baseUrl}rewie/Снимок экрана 2025-10-27 145908.png`,
+    `${baseUrl}rewie/Снимок экрана 2025-10-27 145847.png`,
+    `${baseUrl}rewie/Снимок экрана 2025-10-27 145801.png`
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
