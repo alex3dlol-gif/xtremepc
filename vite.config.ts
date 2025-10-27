@@ -4,7 +4,7 @@ import path from 'path';
 
 export default defineConfig({
   // Base URL для GitHub Pages (измените на название вашего репозитория)
-  base: process.env.NODE_ENV === 'production' ? '/newtry/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/xtremepc/' : '/',
   plugins: [react()],
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
