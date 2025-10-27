@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react-swc';
 import path from 'path';
 
 export default defineConfig({
-  // Base URL для GitHub Pages (измените на название вашего репозитория)
-  base: process.env.NODE_ENV === 'production' ? '/xtremepc/' : '/',
+  // Base URL для GitHub Pages
+  base: '/',
   plugins: [react()],
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
