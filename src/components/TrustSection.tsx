@@ -57,10 +57,10 @@ export function TrustSection() {
         <div className="mt-12 text-center">
           <Card className="inline-block p-6 border-primary/20 bg-gradient-to-r from-primary/10 to-accent/10">
             <p className="text-lg mb-2">
-              <strong>Гарантия лучшей цены:</strong>
+              <strong>Особое предложение:</strong>
             </p>
             <p className="text-muted-foreground">
-              Если найдете аналогичную конфигурацию дешевле — сделаем скидку и добавим апгрейд в подарок
+              Если найдете негативный отзыв о нашей работе — сделаем скидку 10% и добавим бесплатный апгрейд в подарок
             </p>
           </Card>
         </div>
