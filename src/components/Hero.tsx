@@ -34,7 +34,7 @@ export function Hero({ onScrollToCatalog, onOpenOrderModal }: HeroProps) {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-            Профессиональные игровые и рабочие станции премиум-класса, 
+            Профессиональные игровые ПК и рабочие станции премиум-класса, 
             созданные для максимальной производительности
           </p>
           

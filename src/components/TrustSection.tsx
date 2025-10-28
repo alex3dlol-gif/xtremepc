@@ -27,9 +27,9 @@ export function TrustSection() {
             <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
               <Shield className="h-8 w-8 text-accent" />
             </div>
-            <h4 className="text-xl mb-2">Полная прозрачность</h4>
+            <h4 className="text-xl mb-2">Прозрачная сборка</h4>
             <p className="text-sm text-muted-foreground">
-              Показываем детальную смету на каждый компонент. Никаких скрытых платежей
+              Весь процесс сборки прозрачен. По запросу предоставим подробный отчет по работам и тестам
             </p>
           </Card>
 
